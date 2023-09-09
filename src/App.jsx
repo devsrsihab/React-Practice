@@ -1,11 +1,11 @@
 import './App.css'
-import Player from './Player'
+import Users from './Users'
 function App() {
 
 
   return (
     <div>
-    <Player></Player>
+      <Users />
     </div>
   )
 }
