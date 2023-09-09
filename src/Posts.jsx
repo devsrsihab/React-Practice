@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Post from "./Post";
 
 export default function Posts() {
 
@@ -15,9 +16,9 @@ useEffect(()=>{
     <div>
       <h3>Total Posts: {posts.length} </h3>
       <hr />
-      <ol>
+      <ol style={{ paddingLeft:"0px" }}>
         {
-            posts.map(post =>  <li style={{ marginBottom: '15px' }} key={post.id} >{post.title} <small  >{post.body}</small> </li> )  
+           posts.map(post => <Post key={post.id} post={post} ></Post>)
         }
 
       </ol>
