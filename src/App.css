@@ -1,11 +1,14 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 100%;
   padding: 2rem;
-  text-align: center;
+  margin: auto;
 }
-
-.logo {
+.custom-card {
+  width: 450px;
+  background: gray;
+  padding: 23px;
+  border-radius: 10px;
+}.logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
